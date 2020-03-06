@@ -36,4 +36,20 @@ public class UserRegistrationSytemTest {
         Assert.assertFalse(lastName);
     }
 
+    //TEST TO CHECK  EMAIL VALID
+    @Test
+    public void givenEmailName_whenValid_thenReturn() {
+        String name="ladnilesh1994@gmail.co.in";
+        boolean emailName = userregistrationproblem.validateEmailName(name);
+        Assert.assertTrue(emailName);
+    }
+
+    //TEST TO CHECK EMAIL NAME INVALID
+    @Test
+    public void givenEmailName_whenInvalid_thenReturn() {
+        String name="ladnilesh1994@gmail.com";
+        boolean emailName = userregistrationproblem.validateEmailName(name);
+        Assert.assertFalse(emailName);
+    }
+
 }
