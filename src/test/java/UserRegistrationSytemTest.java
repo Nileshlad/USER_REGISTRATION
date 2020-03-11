@@ -8,7 +8,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK  FIRST NAME VALID
     @Test
     public void givenFirstName_whenValid_thenReturn() {
-        String name="Nilesh";
+        String name = "Nilesh";
         boolean firstName = userregistrationproblem.validateFirstName(name);
         Assert.assertTrue(firstName);
     }
@@ -16,7 +16,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK FIRST NAME INVALID
     @Test
     public void givenFirstName_whenInvalid_thenReturn() {
-        String name="nilesh";
+        String name = "nilesh";
         boolean firstName = userregistrationproblem.validateFirstName(name);
         Assert.assertFalse(firstName);
     }
@@ -24,7 +24,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK  LAST NAME VALID
     @Test
     public void givenLastName_whenValid_thenReturn() {
-        String name="nileshLad";
+        String name = "nileshLad";
         boolean lastName = userregistrationproblem.validatelastName(name);
         Assert.assertTrue(lastName);
     }
@@ -32,7 +32,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK LAST NAME INVALID
     @Test
     public void givenLastName_whenInvalid_thenReturn() {
-        String name="NILESHlad";
+        String name = "NILESHlad";
         boolean lastName = userregistrationproblem.validatelastName(name);
         Assert.assertFalse(lastName);
     }
@@ -40,7 +40,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK  EMAIL VALID
     @Test
     public void givenEmailName_whenValid_thenReturn() {
-        String name="ladnilesh1994@gmail.co.in";
+        String name = "ladnilesh1994@gmail.co.in";
         boolean emailName = userregistrationproblem.validateEmailName(name);
         Assert.assertTrue(emailName);
     }
@@ -48,7 +48,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK EMAIL NAME INVALID
     @Test
     public void givenEmailName_whenInvalid_thenReturn() {
-        String name="ladnilesh1994@gmail.com";
+        String name = "ladnilesh1994@gmail.com";
         boolean emailName = userregistrationproblem.validateEmailName(name);
         Assert.assertFalse(emailName);
     }
@@ -56,64 +56,84 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK MOBILE NUMBER VALID
     @Test
     public void givenMobileNumberValidThenReturn() {
-        String number=918888310299
-        boolean mobileNumber= userregistrationproblem.validateMobileNumber(number);
+        String number = "918888310299"
+        boolean mobileNumber = userregistrationproblem.validateMobileNumber(number);
         Assert.assertTrue(mobileNumber);
     }
 
     //TEST TO CHECK MOBILE NUMBER INVALID
     @Test
     public void givenMobileNumberValidThenReturn() {
-        String number=91888310299
-        boolean mobileNumber= userregistrationproblem.validateMobileNumbernumber(number);
+        String number = "91888310299"
+        boolean mobileNumber = userregistrationproblem.validateMobileNumbernumber(number);
         Assert.assertFlase(mobileNumber);
     }
 
     //TEST TO CHECK PASSWORD RULE ONE VALID
     @Test
     public void givenPasswordRuleOneValidThenReturn() {
-        String name=NileshLad
-        boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
+        String name = "NileshLad"
+        boolean passwordOne = userregistrationproblem.validatePasswordRuleOne(name);
         Assert.assertTrue(passwordOne);
 
 
      //TEST TO CHECK PASSWORD RULE ONE INVALID
     @Test
     public void givenPasswordRuleOneValidThenReturn() {
-        String name=Nilesh
-        boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
+        String name = "Nilesh"
+        boolean passwordOne = userregistrationproblem.validatePasswordRuleOne(name);
         Assert.assertFlase(passwordOne);
     }
 
      //TEST TO CHECK PASSWORD RULE TWO VALID
     @Test
     public void givenPasswordRuleTwoValidThenReturn() {
-        String name=NileshLad
-        boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
+        String name = "NileshLad"
+        boolean passwordTwo = userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertTrue(passwordTwo);
     }
      //TEST TO CHECK PASSWORD RULE TWO INVALID
     @Test
     public void givenPasswordRuleTwoValidThenReturn() {
-        String name=nilesh
-        boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
+        String name = "nilesh"
+        boolean passwordTwo = userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertFlase(passwordTwo);
     }
 
     //TEST TO CHECK PASSWORD RULE THREE VALID
     @Test
     public void givenPasswordRuleThreeValidThenReturn() {
-         String name=Nilesh1994
-         boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
-         Assert.assertTrue(passwordThree);
+        String name=Nilesh1994
+        boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
+        Assert.assertTrue(passwordThree);
+
+        String name = "Nilesh1994"
+        boolean passwordThree = userregistrationproblem.validatePasswordRuleThree(name);
+        Assert.assertTrue(passwordThree);
     }
 
 
     //TEST TO CHECK PASSWORD RULE THREE INVALID
     @Test
     public void givenPasswordRuleThreeValidThenReturn() {
-        String name=nilesh
-        boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
+        String name = "nilesh"
+        boolean passwordThree = userregistrationproblem.validatePasswordRuleThree(name);
         Assert.assertFlase(passwordThree);
+    }
+
+    //TEST TO CHECK PASSWORD RULE FOURE VALID
+    @Test
+        public void givenPasswordRuleFoureValidThenReturn() {
+        String name = "Nilesh1994@nilesh"
+        boolean passwordFoure = userregistrationproblem.validatePasswordRuleFoure(name);
+        Assert.assertTrue(passwordFoure);
+    }
+
+    //TEST TO CHECK PASSWORD RULE FOURE INVALID
+    @Test
+    public void givenPasswordRuleFoureValidThenReturn() {
+        String name = "nilesh"
+        boolean passwordFoure = userregistrationproblem.validatePasswordRuleFoure(name);
+        Assert.assertFlase(passwordFoure);
     }
 }

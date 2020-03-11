@@ -4,13 +4,14 @@ public class UserRegistrationSystem
 {
 
     //DECLARE PATTERN
-    String firstNamePattern="^[A-Z][a-z]{2,}$";
-    String lastNamePattern="^[A-Z][a-z]{2,}$";
-    String emailPattern="^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
-    String mobilePattern="(0/91)?[7-9][0-9]{9}";
-    String passwordPatternFirstRule= "^[a-zA-Z0-9]{8,}";
-    String passwordPatternSecondRule="^[A-Z][a-zA-Z0-9]{8,}"
-    String passwordPatternThreeRule="^[0-9][a-zA-Z0-9]{8,}"
+    String firstNamePattern = "^[A-Z][a-z]{2,}$";
+    String lastNamePattern = "^[A-Z][a-z]{2,}$";
+    String emailPattern = "^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
+    String mobilePattern = "(0/91)?[7-9][0-9]{9}";
+    String passwordPatternFirstRule = "^[a-zA-Z0-9]{8,}";
+    String passwordPatternSecondRule = "^[A-Z][a-zA-Z0-9]{8,}"
+    String passwordPatternThreeRule = "^[0-9][a-zA-Z0-9]{8,}"
+    String passwordPatternFoureRule = "^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
 
     //WELCOME MESSAGE
     public static void main (String args[]){
@@ -45,10 +46,11 @@ public class UserRegistrationSystem
     public boolean validatePasswordRuleTwo((String passwordTwo) {
         return (Pattern.matches(passwordPatternSecondRule,passwordTwo));
     }
-
-    // METHOD TO VALIDATE PASSWORD RULE THREE
-    public boolean validatePasswordRuleThree((String passwordThree) {
-        return (Pattern.matches(passwordPatternThreeRule,passwordThree));
+    // METHOD TO VALIDATE PASSWORD RULE FOURE
+    public boolean validatePasswordRuleFoure((String passwordFoure) {
+        return (Pattern.matches(passwordPatternFoureRule,passwordFoure));
     }
+
+
 
 }
