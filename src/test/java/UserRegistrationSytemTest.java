@@ -62,6 +62,7 @@ public class UserRegistrationSytemTest {
 
     //TEST TO CHECK MOBILE NUMBER INVALID
     @Test
+    public void givenMobileNumberValidThenReturn() {
         String number=91888310299
         boolean mobileNumber= userregistrationproblem.validateMobileNumbernumber(number);
         Assert.assertFlase(mobileNumber);
@@ -77,9 +78,9 @@ public class UserRegistrationSytemTest {
 
         //TEST TO CHECK PASSWORD RULE ONE INVALID
         @Test
-        public void givenPasswordRuleOneValidThenReturn() {
-            String name=Nilesh
-            boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
-            Assert.assertFlase(passwordOne);
+    public void givenPasswordRuleOneValidThenReturn() {
+        String name=Nilesh
+        boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
+        Assert.assertFlase(passwordOne);
     }
     }

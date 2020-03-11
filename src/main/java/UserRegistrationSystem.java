@@ -35,7 +35,8 @@ public class UserRegistrationSystem {
     }
 
     // METHOD TO VALIDATE PASSWORD RULE ONE
-    public boolean validatePasswordRuleOne((String passwordOne) {return (Pattern.matches(passwordPatternFirstRule,passwordOne));
+    public boolean validatePasswordRuleOne((String passwordOne) {
+        return (Pattern.matches(passwordPatternFirstRule,passwordOne));
     }
 }
 }
