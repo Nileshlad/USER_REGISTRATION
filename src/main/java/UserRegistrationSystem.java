@@ -51,6 +51,4 @@ public class UserRegistrationSystem
         return (Pattern.matches(passwordPatternFoureRule,passwordFoure));
     }
 
-
-
 }
