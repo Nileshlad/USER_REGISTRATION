@@ -115,7 +115,6 @@ public class UserRegistrationSytemTest {
         String name=nilesh
         boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
         Assert.assertFlase(passwordThree);
-
     }
 
     }
