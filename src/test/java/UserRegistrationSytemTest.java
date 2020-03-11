@@ -62,6 +62,7 @@ public class UserRegistrationSytemTest {
 
     //TEST TO CHECK MOBILE NUMBER INVALID
     @Test
+    public void givenMobileNumberValidThenReturn() {
         String number=91888310299
         boolean mobileNumber= userregistrationproblem.validateMobileNumbernumber(number);
         Assert.assertFlase(mobileNumber);
