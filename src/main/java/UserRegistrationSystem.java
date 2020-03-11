@@ -10,6 +10,7 @@ public class UserRegistrationSystem
     String mobilePattern="(0/91)?[7-9][0-9]{9}";
     String passwordPatternFirstRule= "^[a-zA-Z0-9]{8,}";
     String passwordPatternSecondRule="^[A-Z][a-zA-Z0-9]{8,}"
+    String passwordPatternThreeRule="^[0-9][a-zA-Z0-9]{8,}"
 
     //WELCOME MESSAGE
     public static void main (String args[]){
@@ -43,6 +44,11 @@ public class UserRegistrationSystem
     // METHOD TO VALIDATE PASSWORD RULE Two
     public boolean validatePasswordRuleTwo((String passwordTwo) {
         return (Pattern.matches(passwordPatternSecondRule,passwordTwo));
+    }
+
+    // METHOD TO VALIDATE PASSWORD RULE THREE
+    public boolean validatePasswordRuleThree((String passwordThree) {
+        return (Pattern.matches(passwordPatternThreeRule,passwordThree));
     }
 
 }
