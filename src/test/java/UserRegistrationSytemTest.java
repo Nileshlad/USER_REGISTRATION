@@ -1,7 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class UserRegistrationSytemTest {
+public class UserRegistrationSytemTest
+{
     UserRegistrationSystem userregistrationproblem = new UserRegistrationSystem();
 
     //TEST TO CHECK  FIRST NAME VALID
@@ -76,7 +77,7 @@ public class UserRegistrationSytemTest {
         Assert.assertTrue(passwordOne);
 
 
-        //TEST TO CHECK PASSWORD RULE ONE INVALID
+     //TEST TO CHECK PASSWORD RULE ONE INVALID
     @Test
     public void givenPasswordRuleOneValidThenReturn() {
         String name=Nilesh
@@ -84,21 +85,37 @@ public class UserRegistrationSytemTest {
         Assert.assertFlase(passwordOne);
     }
 
-         //TEST TO CHECK PASSWORD RULE TWO VALID
+     //TEST TO CHECK PASSWORD RULE TWO VALID
     @Test
     public void givenPasswordRuleTwoValidThenReturn() {
         String name=NileshLad
         boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertTrue(passwordTwo);
-     }
-
-
-        //TEST TO CHECK PASSWORD RULE TWO INVALID
+    }
+     //TEST TO CHECK PASSWORD RULE TWO INVALID
     @Test
     public void givenPasswordRuleTwoValidThenReturn() {
         String name=nilesh
         boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertFlase(passwordTwo);
-
-         }
     }
+
+    //TEST TO CHECK PASSWORD RULE THREE VALID
+    @Test
+    public void givenPasswordRuleThreeValidThenReturn() {
+        String name=Nilesh1994
+        boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
+        Assert.assertTrue(passwordThree);
+    }
+
+
+    //TEST TO CHECK PASSWORD RULE THREE INVALID
+    @Test
+    public void givenPasswordRuleThreeValidThenReturn() {
+        String name=nilesh
+        boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
+        Assert.assertFlase(passwordThree);
+
+    }
+
+}
