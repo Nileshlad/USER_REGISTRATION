@@ -77,10 +77,27 @@ public class UserRegistrationSytemTest {
 
 
         //TEST TO CHECK PASSWORD RULE ONE INVALID
-        @Test
+    @Test
     public void givenPasswordRuleOneValidThenReturn() {
         String name=Nilesh
         boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
         Assert.assertFlase(passwordOne);
     }
+
+         //TEST TO CHECK PASSWORD RULE TWO VALID
+    @Test
+    public void givenPasswordRuleTwoValidThenReturn() {
+        String name=NileshLad
+        boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
+        Assert.assertTrue(passwordTwo);
+
+
+        //TEST TO CHECK PASSWORD RULE TWO INVALID
+    @Test
+    public void givenPasswordRuleTwoValidThenReturn() {
+        String name=nilesh
+        boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
+        Assert.assertFlase(passwordTwo);
+
+         }
     }
