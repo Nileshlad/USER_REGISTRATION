@@ -109,7 +109,6 @@ public class UserRegistrationSytemTest {
         Assert.assertTrue(passwordThree);
     }
 
-
     //TEST TO CHECK PASSWORD RULE THREE INVALID
     @Test
     public void givenPasswordRuleThreeValidThenReturn() {
@@ -117,6 +116,6 @@ public class UserRegistrationSytemTest {
         boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
         Assert.assertFlase(passwordThree);
 
-     }
+    }
 
     }
