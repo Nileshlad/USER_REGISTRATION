@@ -52,4 +52,19 @@ public class UserRegistrationSytemTest {
         Assert.assertFalse(emailName);
     }
 
-}
+    //TEST TO CHECK MOBILE NUMBER VALID
+    @Test
+    public void givenMobileNumberValidThenReturn() {
+        String number=918888310299
+        boolean mobileNumber= userregistrationproblem.validateMobileNumber(number);
+        Assert.assertTrue(mobileNumber);
+    }
+
+    //TEST TO CHECK MOBILE NUMBER INVALID
+    @Test
+        String number=91888310299
+        boolean mobileNumber= userregistrationproblem.validateMobileNumbernumber(number);
+        Assert.assertFlase(mobileNumber);
+    }
+
+    }

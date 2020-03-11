@@ -6,6 +6,8 @@ public class UserRegistrationSystem {
     String firstNamePattern="^[A-Z][a-z]{2,}$";
     String lastNamePattern="^[A-Z][a-z]{2,}$";
     String emailPattern="^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
+    String mobilePattern="(0/91)?[7-9][0-9]{9}"
+
     //WELCOME MESSAGE
     public static void main (String args[]){
         System.out.println("WELL COME USER REGISTRATION SYSTEM");
@@ -25,4 +27,10 @@ public class UserRegistrationSystem {
     public boolean validateEmailName(String emailName) {
         return (Pattern.matches(emailPattern,emailName));
     }
+
+    // METHOD TO VALIDATE MOBILE NUMBER
+    public boolean validateMobileNumber(String mobileNumber) {
+        return (Pattern.matches(mobilePattern,mobileNumber));
+    }
+}
 }
