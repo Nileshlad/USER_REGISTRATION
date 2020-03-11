@@ -7,6 +7,7 @@ public class UserRegistrationSystem {
     String lastNamePattern="^[A-Z][a-z]{2,}$";
     String emailPattern="^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
     String mobilePattern="(0/91)?[7-9][0-9]{9}"
+    String passwordPatternFirstRule= "^[a-zA-Z0-9]{8,}";
 
     //WELCOME MESSAGE
     public static void main (String args[]){
@@ -32,5 +33,10 @@ public class UserRegistrationSystem {
     public boolean validateMobileNumber(String mobileNumber) {
         return (Pattern.matches(mobilePattern,mobileNumber));
     }
+
+    // METHOD TO VALIDATE PASSWORD RULE ONE
+    public boolean validatePasswordRuleOne((String passwordOne) {return (Pattern.matches(passwordPatternFirstRule,passwordOne));
+    }
+}
 }
 }

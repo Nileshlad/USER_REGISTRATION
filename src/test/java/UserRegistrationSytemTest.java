@@ -67,4 +67,19 @@ public class UserRegistrationSytemTest {
         Assert.assertFlase(mobileNumber);
     }
 
+    //TEST TO CHECK PASSWORD RULE ONE VALID
+    @Test
+    public void givenPasswordRuleOneValidThenReturn() {
+        String name=NileshLad
+        boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
+        Assert.assertTrue(passwordOne);
+
+
+        //TEST TO CHECK PASSWORD RULE ONE INVALID
+        @Test
+        public void givenPasswordRuleOneValidThenReturn() {
+            String name=Nilesh
+            boolean passwordOne= userregistrationproblem.validatePasswordRuleOne(name);
+            Assert.assertFlase(passwordOne);
+    }
     }
