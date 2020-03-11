@@ -90,6 +90,7 @@ public class UserRegistrationSytemTest {
         String name=NileshLad
         boolean passwordTwo= userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertTrue(passwordTwo);
+     }
 
 
         //TEST TO CHECK PASSWORD RULE TWO INVALID
