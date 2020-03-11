@@ -56,7 +56,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK MOBILE NUMBER VALID
     @Test
     public void givenMobileNumberValidThenReturn() {
-        String number = 918888310299
+        String number = "918888310299"
         boolean mobileNumber = userregistrationproblem.validateMobileNumber(number);
         Assert.assertTrue(mobileNumber);
     }
@@ -64,7 +64,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK MOBILE NUMBER INVALID
     @Test
     public void givenMobileNumberValidThenReturn() {
-        String number = 91888310299
+        String number = "91888310299"
         boolean mobileNumber = userregistrationproblem.validateMobileNumbernumber(number);
         Assert.assertFlase(mobileNumber);
     }
@@ -72,7 +72,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK PASSWORD RULE ONE VALID
     @Test
     public void givenPasswordRuleOneValidThenReturn() {
-        String name = NileshLad
+        String name = "NileshLad"
         boolean passwordOne = userregistrationproblem.validatePasswordRuleOne(name);
         Assert.assertTrue(passwordOne);
 
@@ -80,7 +80,7 @@ public class UserRegistrationSytemTest
      //TEST TO CHECK PASSWORD RULE ONE INVALID
     @Test
     public void givenPasswordRuleOneValidThenReturn() {
-        String name = Nilesh
+        String name = "Nilesh"
         boolean passwordOne = userregistrationproblem.validatePasswordRuleOne(name);
         Assert.assertFlase(passwordOne);
     }
@@ -88,14 +88,14 @@ public class UserRegistrationSytemTest
      //TEST TO CHECK PASSWORD RULE TWO VALID
     @Test
     public void givenPasswordRuleTwoValidThenReturn() {
-        String name = NileshLad
+        String name = "NileshLad"
         boolean passwordTwo = userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertTrue(passwordTwo);
     }
      //TEST TO CHECK PASSWORD RULE TWO INVALID
     @Test
     public void givenPasswordRuleTwoValidThenReturn() {
-        String name = nilesh
+        String name = "nilesh"
         boolean passwordTwo = userregistrationproblem.validatePasswordRuleTwo(name);
         Assert.assertFlase(passwordTwo);
     }
@@ -103,7 +103,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK PASSWORD RULE THREE VALID
     @Test
     public void givenPasswordRuleThreeValidThenReturn() {
-        String name = Nilesh1994
+        String name = "Nilesh1994"
         boolean passwordThree = userregistrationproblem.validatePasswordRuleThree(name);
         Assert.assertTrue(passwordThree);
     }
@@ -112,7 +112,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK PASSWORD RULE THREE INVALID
     @Test
     public void givenPasswordRuleThreeValidThenReturn() {
-        String name = nilesh
+        String name = "nilesh"
         boolean passwordThree = userregistrationproblem.validatePasswordRuleThree(name);
         Assert.assertFlase(passwordThree);
     }
@@ -120,7 +120,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK PASSWORD RULE FOURE VALID
     @Test
         public void givenPasswordRuleFoureValidThenReturn() {
-        String name = Nilesh1994@nilesh
+        String name = "Nilesh1994@nilesh"
         boolean passwordFoure = userregistrationproblem.validatePasswordRuleFoure(name);
         Assert.assertTrue(passwordFoure);
     }
@@ -128,7 +128,7 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK PASSWORD RULE FOURE INVALID
     @Test
     public void givenPasswordRuleFoureValidThenReturn() {
-        String name = nilesh
+        String name = "nilesh"
         boolean passwordFoure = userregistrationproblem.validatePasswordRuleFoure(name);
         Assert.assertFlase(passwordFoure);
 
