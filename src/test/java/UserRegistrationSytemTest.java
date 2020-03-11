@@ -103,9 +103,9 @@ public class UserRegistrationSytemTest
     //TEST TO CHECK PASSWORD RULE THREE VALID
     @Test
     public void givenPasswordRuleThreeValidThenReturn() {
-        String name=Nilesh1994
-        boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
-        Assert.assertTrue(passwordThree);
+         String name=Nilesh1994
+         boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
+         Assert.assertTrue(passwordThree);
     }
 
 
@@ -115,7 +115,5 @@ public class UserRegistrationSytemTest
         String name=nilesh
         boolean passwordThree= userregistrationproblem.validatePasswordRuleThree(name);
         Assert.assertFlase(passwordThree);
-
     }
-
 }
